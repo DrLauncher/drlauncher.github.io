@@ -47,7 +47,23 @@
 #resultados>p:last-child{margin-top:24px}
 .band{padding-block:clamp(54px,7vw,82px)}.quote{padding-block:clamp(56px,7vw,82px)}.capture{padding-block:clamp(56px,7vw,82px)}
 @media(max-width:800px){.wrap{width:min(100% - 36px,640px)}.hero{grid-template-columns:1fr}.visual{min-height:0;aspect-ratio:1.2/1}.cards,#nosotros .cards,#resultados .cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.service{min-height:130px}#solucion{grid-template-columns:1fr;gap:16px}#solucion>.eyebrow{grid-column:auto}#solucion .hero-copy{max-width:65ch}}
-@media(max-width:520px){.wrap{width:calc(100% - 32px)}.hero h1{font-size:clamp(42px,11vw,58px)}.visual{aspect-ratio:1/1;min-height:330px}.cards,#nosotros .cards,#resultados .cards{grid-template-columns:1fr;gap:10px}.service{min-height:0;padding:18px 16px 20px 0}.service h3{margin-top:16px}.section-head{margin-bottom:22px}#resultados .service{min-height:0}.capture-grid{gap:28px}}</style></head>
+@media(max-width:520px){.wrap{width:calc(100% - 32px)}.hero h1{font-size:clamp(42px,11vw,58px)}.visual{aspect-ratio:1/1;min-height:330px}.cards,#nosotros .cards,#resultados .cards{grid-template-columns:1fr;gap:10px}.service{min-height:0;padding:18px 16px 20px 0}.service h3{margin-top:16px}.section-head{margin-bottom:22px}#resultados .service{min-height:0}.capture-grid{gap:28px}}</style><style>/* Desktop-specific composition refinements */
+@media(min-width:801px){
+.wrap{width:min(1160px,calc(100% - 96px))}
+.nav{height:88px}.links{gap:clamp(14px,1.7vw,26px)}
+.hero{grid-template-columns:minmax(0,1.02fr) minmax(430px,.98fr);gap:clamp(42px,5vw,72px);padding:64px 0 68px;min-height:0}
+.hero h1{font-size:clamp(48px,5vw,70px);line-height:1.02;max-width:620px}.hero .hero-subtitle{font-size:28px;max-width:560px}.hero-copy{font-size:15px;line-height:1.7;max-width:540px}
+.visual{height:clamp(440px,39vw,500px);aspect-ratio:auto}
+.section{padding:62px 0}.section-head{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(300px,.7fr);align-items:end;gap:64px;margin-bottom:32px}.section h2{font-size:clamp(38px,3.6vw,52px);line-height:1.04;max-width:720px}.section-head p{font-size:14px;max-width:430px}
+.cards{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}.service{min-height:148px;padding:22px 24px 22px 0}.service h3{font-size:22px;margin:25px 0 10px}.service p{font-size:13px;line-height:1.65}
+#problema .section-head{grid-template-columns:minmax(0,1.1fr) minmax(330px,.7fr)}#problema .cards{gap:30px}#problema .service{min-height:135px}
+#solucion{padding:66px 0;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);column-gap:84px}#solucion h2{font-size:48px}#solucion .hero-copy{font-size:15px}
+#nosotros .cards{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px 28px}#nosotros .service{min-height:105px}
+#resultados .cards{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px 26px}#resultados .service{min-height:76px}
+.band{padding:72px 0}.band-inner{grid-template-columns:1fr 1fr;gap:76px}.band h2{font-size:68px}
+.quote{padding:66px 0 70px}.quote blockquote{max-width:930px;font-size:54px}
+.capture{padding:72px 0}.capture-grid{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:72px}.capture h2{font-size:62px}
+}</style></head>
 <body>
 <div class="topline">PILOTO DE MARCA · COLOMBIA <span style="margin-left:8px" class="placeholder">mercado por confirmar</span></div>
 <header class="wrap nav"><a class="brand" href="#inicio" aria-label="Doctor Launcher, inicio"><img class="brand-logo" src="assets/dr-launcher-isotipo.png" alt=""> <span>DOCTOR LAUNCHER</span></a><nav class="links" aria-label="Navegación principal"><a href="#inicio">Inicio</a><a href="#metodo">El método</a><a href="#entregables">Entregables</a><a href="#perfil">Nosotros</a><a href="#conversemos">Contacto</a></nav><a class="nav-cta" href="#conversemos">AGENDA TU DIAGNÓSTICO</a></header>
