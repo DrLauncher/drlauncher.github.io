@@ -16,3 +16,34 @@
 .hero h1,.hero .hero-subtitle,.hero .hero-copy,.hero .hero-actions{opacity:1!important;transform:none!important}.founder-visual.hero-editorial{max-width:520px!important;justify-self:end;width:100%;margin-left:0}.hero{min-height:760px}.hero-image-caption{bottom:25px}@media(max-width:800px){.founder-visual.hero-editorial{justify-self:center;width:calc(100% - 20px);margin-inline:auto}.hero{min-height:0}}
 
 #solucion .phases-intro>p{text-align:center;justify-self:center;align-self:center;color:var(--paper)}#conversemos .eyebrow{color:#1F2A44!important}
+
+
+/* Mobile typography: keep words separated and headings easy to scan. */
+@media(max-width:480px){
+  .hero h1{
+    font-size:clamp(42px,12vw,48px)!important;
+    line-height:1.02!important;
+    letter-spacing:-1.5px!important;
+    margin:20px 0!important;
+  }
+  .hero h1 br{display:block!important}
+  .hero h1 em{letter-spacing:-1.5px!important}
+  .section h2,.phases h2,.band h2,.capture h2{
+    line-height:1.1!important;
+    letter-spacing:-.5px!important;
+    overflow-wrap:normal;
+    word-break:normal;
+  }
+  .nav-cta{
+    width:122px;
+    max-width:122px;
+    white-space:normal;
+    line-height:1.25;
+    font-size:7px;
+    letter-spacing:.02em;
+    padding:10px 7px;
+    margin-left:auto;
+    margin-right:8px;
+  }
+  .hero .eyebrow{letter-spacing:.12em}
+}
