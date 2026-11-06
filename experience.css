@@ -108,3 +108,36 @@
   }
   .hero .eyebrow{letter-spacing:.12em}
 }
+
+/* Mobile layout overrides for high-specificity section grids. */
+@media(max-width:800px){
+  #problema .section-head,#nosotros .section-head,#resultados .section-head{
+    display:block!important;
+    grid-template-columns:minmax(0,1fr)!important;
+  }
+  #problema .cards,#nosotros .cards,#perfil .cards,#resultados .cards,.results-grid{
+    grid-template-columns:minmax(0,1fr)!important;
+  }
+  #problema .cards .service,#nosotros .cards .service,#perfil .cards .service,#resultados .cards .service{
+    min-width:0;
+    overflow-wrap:anywhere;
+  }
+}
+@media(max-width:480px){
+  .nav-cta{
+    font-size:8px;
+    line-height:1.15;
+    letter-spacing:.01em;
+  }
+  .hero h1{
+    font-size:clamp(34px,10.8vw,44px)!important;
+    line-height:1.08!important;
+    letter-spacing:-.5px!important;
+  }
+  #problema h2,#nosotros h2,#perfil h2,#resultados h2,#solucion h2,#planes h2,#faq h2,#conversemos h2,
+  .section h2,.phases h2,.band h2,.capture h2{
+    line-height:1.15!important;
+    letter-spacing:0!important;
+    word-spacing:.04em;
+  }
+}
